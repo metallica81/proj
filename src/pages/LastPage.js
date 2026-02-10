@@ -24,7 +24,7 @@ function LastPage({ onBack, data }) {
         ← Назад
       </button>
 
-      <div className="content-container">
+      <div className="last-page-content-container">
         <div className="info-group">
           <div className="info-item">
             <p className="info-label">Выбранная платформа:</p>
@@ -53,7 +53,7 @@ function LastPage({ onBack, data }) {
           </div>
         </div>
 
-        <div className="info-group">
+        <div className="info-group:last-of-type">
           <div className="info-item">
             <p className="info-label">Способ получения:</p>
             <p className="info-value">{data?.manufacturer} {`(${data?.manufacturerConfidence}%)`}</p>
@@ -64,6 +64,11 @@ function LastPage({ onBack, data }) {
           <p className="average-label">Средний процент уверенности:</p>
           <p className="average-value">{averageConfidence}%</p>
         </div>
+
+          <div className="average-block">
+              <p className="average-label">Стоимость товара:</p>
+              <p className="average-value">{data?.bankPrice || "—"}</p>
+          </div>
       </div>
     </div>
   );
