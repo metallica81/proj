@@ -29,56 +29,40 @@ function LastPage({ onBack, data }) {
 
         <div className="info-group">
           <div className="info-item">
-            <p className="info-label">Выбранный ретейлер:</p>
-            <p className="info-value">{data?.retailer}</p>
-          </div>
-          <div className="info-item">
-            <p className="info-label">Уверенность в ретейлере:</p>
-            <p className="info-value">{data?.confidence}%</p>
+            <p className="info-label">Выбранная платформа:</p>
+            <p className="info-value">{data?.retailer} {`(${data?.confidence}%)`}</p>
           </div>
         </div>
 
         <div className="info-group">
           <div className="info-item">
-            <p className="info-label">Выбранный девелопер:</p>
-            <p className="info-value">{data?.developer}</p>
-          </div>
-          <div className="info-item">
-            <p className="info-label">Уверенность в девелопере:</p>
-            <p className="info-value">{data?.developerConfidence}%</p>
+            <p className="info-label">Причина покупки:</p>
+            <p className="info-value">{data?.developer} {`(${data?.developerConfidence}%)`}</p>
           </div>
         </div>
 
         <div className="info-group">
           <div className="info-item">
-            <p className="info-label">Выбранный банк:</p>
-            <p className="info-value">{data?.bank}</p>
+            <p className="info-label">Выбранный товар:</p>
+            <p className="info-value">{data?.bank} {`(${data?.bankConfidence}%)`}</p>
           </div>
           <div className="info-item">
-            <p className="info-label">Уверенность в банке:</p>
+            <p className="info-label">Способ оплаты:</p>
             <p className="info-value">{data?.bankConfidence}%</p>
           </div>
         </div>
 
         <div className="info-group">
           <div className="info-item">
-            <p className="info-label">Выбранная авиакомпания:</p>
-            <p className="info-value">{data?.airline}</p>
-          </div>
-          <div className="info-item">
-            <p className="info-label">Уверенность в авиакомпании:</p>
-            <p className="info-value">{data?.airlineConfidence}%</p>
+            <p className="info-label">Способ оплаты:</p>
+            <p className="info-value">{data?.airline} {`(${data?.airlineConfidence}%)`}</p>
           </div>
         </div>
 
         <div className="info-group">
           <div className="info-item">
-            <p className="info-label">Выбранный производитель:</p>
-            <p className="info-value">{data?.manufacturer}</p>
-          </div>
-          <div className="info-item">
-            <p className="info-label">Уверенность в производителе:</p>
-            <p className="info-value">{data?.manufacturerConfidence}%</p>
+            <p className="info-label">Способ получения:</p>
+            <p className="info-value">{data?.manufacturer} {`(${data?.manufacturerConfidence}%)`}</p>
           </div>
         </div>
 
