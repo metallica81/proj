@@ -21,8 +21,7 @@ function FifthPage({ onBack, onNext, previousData }) {
       { name: "Сервант", price: "11 000 ₽" },
       { name: "Буфет", price: "13 000 ₽" },
       { name: "Банкетка", price: "3 500 ₽" },
-      { name: "Этажерка", price: "3 000 ₽" },
-      { name: "Шведская стенка", price: "5 500 ₽" }
+      { name: "Этажерка", price: "3 000 ₽" }
   ];
 
   const handleBankClick = (item) => {
