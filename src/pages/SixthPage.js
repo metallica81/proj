@@ -7,10 +7,10 @@ function SixthPage({ onBack, onNext, previousData }) {
   const [showModal, setShowModal] = useState(false);
 
     const items = [
-        "Онлайн полная оплата",
+        "Онлайн оплата",
         "Кредит",
-        "После получения от курьера",
-        "Сплит (разделённый платёж)",
+        "При получении",
+        "Сплит",
         "Рассрочка"
     ];
 

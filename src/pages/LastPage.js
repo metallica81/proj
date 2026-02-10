@@ -1,5 +1,5 @@
 import React from 'react';
-import './ThirdPage.css';
+import './LastPage.css';
 
 function LastPage({ onBack, data }) {
   const calculateAverageConfidence = () => {
@@ -25,8 +25,6 @@ function LastPage({ onBack, data }) {
       </button>
 
       <div className="content-container">
-        <h1 className="title">Спасибо!</h1>
-
         <div className="info-group">
           <div className="info-item">
             <p className="info-label">Выбранная платформа:</p>
@@ -45,10 +43,6 @@ function LastPage({ onBack, data }) {
           <div className="info-item">
             <p className="info-label">Выбранный товар:</p>
             <p className="info-value">{data?.bank} {`(${data?.bankConfidence}%)`}</p>
-          </div>
-          <div className="info-item">
-            <p className="info-label">Способ оплаты:</p>
-            <p className="info-value">{data?.bankConfidence}%</p>
           </div>
         </div>
 

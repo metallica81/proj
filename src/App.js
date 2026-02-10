@@ -7,7 +7,7 @@ import FourthPage from './pages/FourthPage';
 import FifthPage from './pages/FifthPage';
 import SixthPage from './pages/SixthPage';
 import SeventhPage from './pages/SeventhPage';
-import LastPage from './pages/ThirdPage';
+import LastPage from './pages/LastPage';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('welcome');
