@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import WelcomePage from './pages/WelcomePage';
 import FirstPage from './pages/FirstPage';
@@ -7,7 +7,7 @@ import FourthPage from './pages/FourthPage';
 import FifthPage from './pages/FifthPage';
 import SixthPage from './pages/SixthPage';
 import SeventhPage from './pages/SeventhPage';
-import ThirdPage from './pages/ThirdPage';
+import LastPage from './pages/ThirdPage';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('welcome');
@@ -69,7 +69,7 @@ function App() {
 
   const handleSeventhPageNext = (data) => {
     setSelectedData(data);
-    setCurrentPage('third');
+    setCurrentPage('last');
   };
 
   const handleThirdPageBack = () => {
@@ -111,8 +111,8 @@ function App() {
           previousData={selectedData}
         />
       )}
-      {currentPage === 'third' && (
-        <ThirdPage onBack={handleThirdPageBack} data={selectedData} />
+      {currentPage === 'last' && (
+        <LastPage onBack={handleThirdPageBack} data={selectedData} />
       )}
     </div>
   );

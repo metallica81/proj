@@ -1,7 +1,7 @@
 import React from 'react';
 import './ThirdPage.css';
 
-function ThirdPage({ onBack, data }) {
+function LastPage({ onBack, data }) {
   const calculateAverageConfidence = () => {
     const confidences = [
       data?.confidence,
@@ -91,4 +91,4 @@ function ThirdPage({ onBack, data }) {
   );
 }
 
-export default ThirdPage;
+export default LastPage;

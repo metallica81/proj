@@ -21,7 +21,8 @@ function FifthPage({ onBack, onNext, previousData }) {
       "Сервант",
       "Буфет",
       "Банкетка",
-      "Этажерка"
+      "Этажерка",
+      "Шведская стенка"
   ];
 
   const handleBankClick = (bank) => {
